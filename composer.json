@@ -1,11 +1,16 @@
 {
     "name": "statview/laravel-sentry-queue-monitor",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Sebastiaan Kloos",
-            "email": "sebastiaan@statview.app"
+    "autoload": {
+        "psr-4": {
+            "Statview\\LaravelSentryQueueMonitor\\": "src"
         }
-    ],
-    "require": {}
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Statview\\LaravelSentryQueueMonitor\\MonitorServiceProvider"
+            ]
+        }
+    }
 }
