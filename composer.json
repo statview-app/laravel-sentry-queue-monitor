@@ -1,0 +1,11 @@
+{
+    "name": "statview/laravel-sentry-queue-monitor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastiaan Kloos",
+            "email": "sebastiaan@statview.app"
+        }
+    ],
+    "require": {}
+}
