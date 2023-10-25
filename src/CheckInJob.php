@@ -41,7 +41,7 @@ class CheckInJob implements ShouldQueue
             MonitorSchedule::crontab('* * * * *'),
             null,
             null,
-            'Europe/Amsterdam',
+            config('app.timezone', 'UTC'),
         ));
 
         $event = SentryEvent::createCheckIn();
